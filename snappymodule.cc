@@ -88,7 +88,7 @@ snappy_strerror(snappy_status status)
     }
 }
 
-static PyObject *
+PyObject *
 snappy__compress(PyObject *self, PyObject *args)
 {
     const char * input;
@@ -127,7 +127,7 @@ snappy__compress(PyObject *self, PyObject *args)
     return NULL;
 }
 
-static PyObject *
+PyObject *
 snappy__uncompress(PyObject *self, PyObject *args)
 {
     const char * compressed;
